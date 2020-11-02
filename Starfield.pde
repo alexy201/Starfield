@@ -4,7 +4,7 @@ void setup()
 {
   size(500,500);
   dots = new Particle[1000];
-  for (int i = 0; i < dots.length; i++){
+  for (int i = 1; i < dots.length; i++){
     dots[i] = new Particle();
     dots[i].X = dots[i].Y = 250;
   }
@@ -22,7 +22,7 @@ void draw()
 void mousePressed()
 {
   dots = new Particle[1000];
-  for (int i = 0; i < dots.length; i++){
+  for (int i = 1; i < dots.length; i++){
     dots[i] = new Particle();
   }
   dots[0] = new OddballParticle();
